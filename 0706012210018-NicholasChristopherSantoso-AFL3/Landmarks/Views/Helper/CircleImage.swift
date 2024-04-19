@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CircleImage: View {
+    var image: Image
+    
     var body: some View {
-        Image("Unknown copy 2")
+        image
             .frame(maxWidth: 300, maxHeight: 300)
             .clipShape(Circle())
             .overlay {
@@ -20,5 +22,5 @@ struct CircleImage: View {
 }
 
 #Preview {
-    CircleImage()
+    CircleImage(image: Image("Unknown copy 2"))
 }
