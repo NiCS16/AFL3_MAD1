@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import CoreLocation
+import AVFoundation
 
 struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
